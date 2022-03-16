@@ -11,7 +11,7 @@ class CountDown {
         listeners.remove(eventListener)
     }
 
-    fun notify(message: String) {
+    private fun notify(message: String) {
         for (listener in listeners) {
             listener.update(message)
         }
